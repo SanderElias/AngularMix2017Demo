@@ -1,0 +1,12 @@
+button {
+    max-width: 10em;
+    margin: 10px;
+}
+:host {
+    display:grid;
+    min-height:50vh;
+    margin:20px;
+    background-color: rgba(240, 240, 240, 0.85);
+    border-radius: 15px;
+    padding:10px;
+}

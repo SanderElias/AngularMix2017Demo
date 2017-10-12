@@ -1,0 +1,22 @@
+<div class="card">
+    <div>There are {{sw.count$|async}} results in the set
+        <span *ngIf="sw.loading$|async">
+            <img src="/assets/spinner.svg" alt="spinner" style="width:2em;height:1em;"> Loading..
+        </span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let people of sw.people$|async">
+                <td>{{people.name}}</td>
+                <td>{{people.gender}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
